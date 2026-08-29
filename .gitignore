@@ -1,0 +1,71 @@
+# ==============================================================================
+# PESGO Repository Root .gitignore
+# ==============================================================================
+
+# Environment & Credentials
+.env
+.env.backup
+.env.production
+*.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+auth.json
+
+# Dependencies
+**/vendor/
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Laravel Runtime / Cache / Logs
+/backend/bootstrap/cache/*.php
+/backend/storage/logs/*.log
+/backend/storage/framework/views/*.php
+/backend/storage/framework/cache/data/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/testing/*
+/backend/storage/pail/
+/backend/.phpunit.result.cache
+/backend/.phpunit.cache/
+
+# Preserve Laravel framework directory markers
+!/backend/bootstrap/cache/.gitignore
+!/backend/database/.gitignore
+!/backend/storage/**/.gitignore
+
+# Frontend / Vite Build Artifacts
+/backend/public/build
+/backend/public/hot
+/backend/public/storage
+
+# Local VM / Tooling
+Homestead.json
+Homestead.yaml
+.phpactor.json
+
+# Temporary / Scratch Files
+temp_hr_doc.txt
+*.tmp
+*.bak
+*.swp
+
+# AI Agent Scratch / Prompt Meta Notes
+Documentation/Antigravity-Models-List.txt
+Documentation/STRICT-RULE-PROMPTING.txt
+
+# Private Claim / Billing / Evidence Material
+Documentation/Claim/
+
+# IDE / Editor / OS Files
+.idea/
+.vscode/
+.fleet/
+.nova/
+.zed/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
